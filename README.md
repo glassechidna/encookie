@@ -22,7 +22,11 @@ use Rack::Session::Encookie, key: key
 get '/' do
   session[:yourdata] = 'super secret persistent data'
 end
-````
+```
+
+## Development
+
+`bundle exec rake release` will create and push tags to GitHub and push the gem to Rubygems.
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/glassechidna/encookie.
 
